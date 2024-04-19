@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    padding: 25px 60px;
+  }
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+  h1 {
+      color: transparent;
+      -webkit-text-stroke: rgb(255, 255, 255);
+      position: relative;
+ }
+    h1::before{
+              content: "WELCOME TO NEW OFFER SECTION";
+              position: absolute;
+              width: 0%;
+              height: 100%;
+              overflow: hidden;
+              color: rgb(0, 0, 0);
+              border-right: 8px solid rgb(0, 0, 0);
+              transition: 1s ease-in;
+              
+    }
+    h1:hover::before{
+      width: 100%;
+      
+    }
+
+  .flip-card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 80%; 
+    margin: 0 auto; 
+  }
+  .flip-card {
+    background-color: transparent;
+    margin: 10px; 
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+ 
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  
+  .flip-card-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(255, 0, 0);
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card button:hover {
+    opacity: 0.10;
+  }
+ #abc{
+  margin-left: 135px;
+ }
+ h3{
+  margin-left: 500px;
+  margin-top: 80px;
+  position:absolute;
+  font-size: 40px;
+  -webkit-text-fill-color: rgb(183, 0, 183);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+ }
+ h4{
+  margin-left: 300px;
+  font-size: 30px;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+ }
+ #hehe{
+  margin-left: 830px;
+ }
+ h5{
+  margin-left: 740px;
+  font-size: 30px;
+  -webkit-text-fill-color: rgb(218, 0, 218);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  
+ }
+ h6{
+  position: absolute;
+  margin-left: 135px;
+  margin-top: -120px;
+  font-size: 40px;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+ }
+ #chipi{
+  position: absolute;
+  margin-left: 750px;
+  margin-top: -400px;
+  font-size: 40px;
+  -webkit-text-fill-color: rgb(218, 0, 218);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+ }
+
+#pic{
+  margin-left: 830px;
+  
+}
+#chapa{
+  
+  margin-left: 765px;
+  font-size: 30px;
+  -webkit-text-fill-color: rgb(218, 0, 218);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+#dubi{
+    position: absolute;
+    margin-left: 135px;
+    margin-top: -200px;
+  font-size: 40px;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
